@@ -17,8 +17,8 @@ This is a simple Note Application API that lets you create a note, view it, upda
 
 ### How to run
 To run the application locally, follow these steps:
-1. Clone the repository:
-2. Navigate to the project directory:
+1. Clone the repository: https://github.com/hazelcosina/note/
+2. Navigate to the project directory: note/
 3. Build the project using Maven in cmd:
 mvn clean install
 4. Run the application in cmd:
