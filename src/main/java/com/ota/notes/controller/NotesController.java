@@ -57,7 +57,7 @@ public class NotesController {
      * @return ResponseEntity with the created note and HttpStatus CREATED if successful, or HttpStatus BAD_REQUEST if the input data is invalid.
      */
     @PostMapping()
-    public ResponseEntity<?> createNote(@RequestBody @Valid Note note) {
+    public ResponseEntity<Note> createNote(@RequestBody @Valid Note note) {
         return new ResponseEntity<Note>(noteService.saveNote(note), HttpStatus.CREATED);
     }
 

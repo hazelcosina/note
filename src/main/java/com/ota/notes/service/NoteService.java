@@ -42,6 +42,7 @@ public class NoteService implements INotesService {
                 .orElseThrow(() -> new NoteNotFoundException("Note with id " + id + " not found"));
         existingNote.setTitle(note.getTitle());
         existingNote.setContent(note.getContent());
+        noteRepository.save(existingNote);
         return existingNote;
     }
 
